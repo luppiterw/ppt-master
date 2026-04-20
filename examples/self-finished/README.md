@@ -2,6 +2,12 @@
 
 This directory stores finished presentation projects generated locally and promoted out of `projects/` so they can be version controlled.
 
+For future AI sessions without prior chat context, read these first:
+
+- [AGENTS.md](./AGENTS.md)
+- [WORKFLOW.md](./WORKFLOW.md)
+- [PROJECT_INDEX.md](./PROJECT_INDEX.md)
+
 Current contents:
 
 - `docs_overview_ppt169_20260420`
