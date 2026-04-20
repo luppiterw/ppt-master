@@ -1,4 +1,4 @@
-# Self-Finished Workflow
+# Luppiterw Workflow
 
 This document explains how to continue the user's personal PPT production workflow when there is no prior chat context.
 
@@ -22,7 +22,7 @@ Keep finished, shareable PPT Master outputs in a versioned area that is safe to 
    - `finalize_svg.py`
    - `svg_to_pptx.py -s final`
 3. Verify exports exist in `exports/`
-4. If the project is considered finished or worth sharing, move it to `examples/self-finished/`
+4. If the project is considered finished or worth sharing, move it to `examples/luppiterw/`
 5. Update [PROJECT_INDEX.md](./PROJECT_INDEX.md)
 6. Commit on the user's archival branch and push to remote `luppiterw`
 
@@ -30,17 +30,17 @@ Keep finished, shareable PPT Master outputs in a versioned area that is safe to 
 
 - Preferred remote: `luppiterw`
 - Preferred remote URL: `git@github.com:luppiterw/ppt-master.git`
-- Existing archival branch: `self-finished-20260420`
-- Acceptable future branch naming: `self-finished-YYYYMMDD`
+- Existing archival branch: `luppiterw`
+- Prefer continuing work on branch `luppiterw`
 
 ## Directory Convention
 
 Use this structure:
 
-- `examples/self-finished/<finished-project>/`
-- `examples/self-finished/README.md`
-- `examples/self-finished/PROJECT_INDEX.md`
-- `examples/self-finished/AGENTS.md`
+- `examples/luppiterw/<finished-project>/`
+- `examples/luppiterw/README.md`
+- `examples/luppiterw/PROJECT_INDEX.md`
+- `examples/luppiterw/AGENTS.md`
 
 Each archived project should ideally contain:
 
@@ -81,7 +81,7 @@ Purpose:
 
 ## What Future AI Should Avoid
 
-- Do not archive unfinished work into `examples/self-finished/`
+- Do not archive unfinished work into `examples/luppiterw/`
 - Do not leave finished work only in `projects/`
 - Do not delete the user's intermediate project attempts unless explicitly asked
 - Do not force-push or rewrite archival history unless explicitly asked

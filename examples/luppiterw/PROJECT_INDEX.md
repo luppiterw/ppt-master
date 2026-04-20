@@ -1,6 +1,6 @@
-# Self-Finished Project Index
+# Luppiterw Project Index
 
-This index records the user's archived, versioned PPT Master outputs.
+This index records the user's archived, versioned PPT Master outputs under `examples/luppiterw/`.
 
 ## Current Archive
 
@@ -41,9 +41,9 @@ This index records the user's archived, versioned PPT Master outputs.
 
 ## Current User Preferences Captured In This Archive
 
-- finished projects should be moved from `projects/` to `examples/self-finished/`
+- finished projects should be moved from `projects/` to `examples/luppiterw/`
 - style variants should be preserved as separate projects
-- archival work should be committed on a dedicated branch and pushed to the user's fork
+- archival work should be committed on branch `luppiterw` and pushed to the user's fork
 - future AI sessions should be able to resume from repository-local documentation without prior chat context
 
 ## Maintenance Rule

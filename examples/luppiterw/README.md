@@ -1,4 +1,4 @@
-# Self-Finished Examples
+# Luppiterw Examples
 
 This directory stores finished presentation projects generated locally and promoted out of `projects/` so they can be version controlled.
 
