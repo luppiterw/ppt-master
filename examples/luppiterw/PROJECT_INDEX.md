@@ -51,6 +51,51 @@ This index records the user's archived, versioned PPT Master outputs under `exam
 When a new finished project is archived:
 
 1. add a new entry here
-2. mention whether it is a base deck or a style variant
-3. mention the source material or source deck
-4. mention the style family if applicable
+2. append it at the end of `## Current Archive`
+3. use one of the fixed templates below
+4. keep the numbered heading continuous
+5. mention whether it is a base deck or a style variant
+6. mention the source material or source deck
+7. mention the style family if applicable
+
+## Fixed Entry Templates
+
+Copy one of the following blocks and replace the placeholders directly.
+
+### Template A. Base Deck
+
+```md
+### <N>. <Short Display Name>
+
+- Project: `<project_directory_name>`
+- Type: base deck
+- Source set:
+  - `<source_file_or_url_1>`
+  - `<source_file_or_url_2>`
+- Output summary:
+  - `<page_count> pages`
+  - editable native PPTX
+  - SVG backup PPTX
+```
+
+### Template B. Style Variant
+
+```md
+### <N>. <Short Display Name>
+
+- Project: `<project_directory_name>`
+- Type: style variant
+- Source deck: `<base_project_directory_name>`
+- Style family: `<style_family>`
+- Output summary:
+  - `<page_count> pages`
+  - editable native PPTX
+  - SVG backup PPTX
+```
+
+### Template Notes
+
+- For base decks, keep `Source set` as the original source files or URLs actually used.
+- For style variants, use `Source deck` to point back to the archived base project.
+- If page count is not yet confirmed, replace `<page_count>` before committing instead of leaving the placeholder.
+- Keep labels and field order unchanged so future AI can continue appending entries in the same format.
