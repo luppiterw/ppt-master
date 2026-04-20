@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#F7F9FC" />
+  <text x="60" y="86" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#1F2937">SVG is the practical bridge format</text>
+  <text x="60" y="116" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">The technical design doc explains the choice by elimination, not by trend.</text>
+
+  <g id="table" filter="url(#softShadow)">
+    <path fill="#FFFFFF" d="M84,160 H1196 A24,24 0 0 1 1220,184 V610 A24,24 0 0 1 1196,634 H84 A24,24 0 0 1 60,610 V184 A24,24 0 0 1 84,160 Z" />
+    <path fill="#EAF0F8" d="M84,160 H1196 A24,24 0 0 1 1220,184 V210 A24,24 0 0 1 1196,234 H84 A24,24 0 0 1 60,210 V184 A24,24 0 0 1 84,160 Z" />
+    <text x="108" y="205" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#5B6472">Approach</text>
+    <text x="426" y="205" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#5B6472">Why it falls short</text>
+    <text x="930" y="205" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1565C0">Why SVG wins here</text>
+
+    <line x1="360" y1="160" x2="360" y2="634" stroke="#D6DEEA" stroke-width="2" />
+    <line x1="850" y1="160" x2="850" y2="634" stroke="#D6DEEA" stroke-width="2" />
+    <line x1="60" y1="252" x2="1220" y2="252" stroke="#D6DEEA" stroke-width="2" />
+    <line x1="60" y1="348" x2="1220" y2="348" stroke="#D6DEEA" stroke-width="2" />
+    <line x1="60" y1="444" x2="1220" y2="444" stroke="#D6DEEA" stroke-width="2" />
+    <line x1="60" y1="540" x2="1220" y2="540" stroke="#D6DEEA" stroke-width="2" />
+
+    <text x="108" y="308" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1F2937">Direct DrawingML</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="390" y="288">Too verbose for robust AI authoring.</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="390" y="310">Hard to debug by eye.</text><text x="882" y="308" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#1565C0">SVG keeps the vector logic readable before export.</text>
+
+    <text x="108" y="404" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1F2937">HTML/CSS</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="390" y="384">Great for document flow and browsers,</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="390" y="406">weak for independent slide objects.</text><text x="882" y="404" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#1565C0">SVG matches the slide canvas worldview.</text>
+
+    <text x="108" y="500" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1F2937">WMF / EMF</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="390" y="480">Closer to Microsoft graphics internally,</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="390" y="502">but nearly useless as an AI authoring target.</text><text x="882" y="500" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#1565C0">SVG has far better model familiarity and visual inspectability.</text>
+
+    <text x="108" y="596" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1F2937">SVG as image only</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="390" y="576">Easy export path, but editability disappears.</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="390" y="598">Everything becomes a static visual.</text><text x="882" y="596" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#1565C0">PPT Master uses SVG as an intermediate engineering artifact, not as the final image.</text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" fill="#8B95A7">07</text>
+</svg>

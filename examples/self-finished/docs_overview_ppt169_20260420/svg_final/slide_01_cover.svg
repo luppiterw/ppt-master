@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1565C0" />
+      <stop offset="100%" stop-color="#7C4DFF" />
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="84%" cy="16%" r="52%">
+      <stop offset="0%" stop-color="#00ACC1" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#00ACC1" stop-opacity="0" />
+    </radialGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.12" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#F7F9FC" />
+  <rect x="0" y="0" width="1280" height="720" fill="url(#bgGlow)" />
+  <circle cx="1100" cy="92" r="170" fill="#1565C0" fill-opacity="0.06" />
+  <circle cx="1040" cy="620" r="210" fill="#7C4DFF" fill-opacity="0.05" />
+  <circle cx="180" cy="132" r="110" fill="#00ACC1" fill-opacity="0.07" />
+
+  <g id="headerMark">
+    <path fill="#1565C0" d="M68,56 H118 A4,4 0 0 1 122,60 V60 A4,4 0 0 1 118,64 H68 A4,4 0 0 1 64,60 V60 A4,4 0 0 1 68,56 Z" />
+    <path fill="#00ACC1" d="M68,72 H152 A4,4 0 0 1 156,76 V76 A4,4 0 0 1 152,80 H68 A4,4 0 0 1 64,76 V76 A4,4 0 0 1 68,72 Z" />
+  </g>
+
+  <g id="titleBlock">
+    <text x="84" y="214" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#1565C0" letter-spacing="2">DOCUMENTATION SYNTHESIS</text>
+    <text x="84" y="302" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="66" font-weight="700" fill="url(#titleGrad)">PPT Master</text>
+    <text x="84" y="368" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="28" font-weight="700" fill="#1F2937">Product, Architecture, and Setup Overview</text>
+    <text x="84" y="414" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="20" fill="#5B6472">A compact deck distilled from the project docs into a single narrative.</text>
+  </g>
+
+  <g id="heroCard" filter="url(#softShadow)">
+    <path fill="#FFFFFF" d="M768,124 H1174 A28,28 0 0 1 1202,152 V566 A28,28 0 0 1 1174,594 H768 A28,28 0 0 1 740,566 V152 A28,28 0 0 1 768,124 Z" />
+    <path fill="#1565C0" fill-opacity="0.03" d="M768,124 H1174 A28,28 0 0 1 1202,152 V566 A28,28 0 0 1 1174,594 H768 A28,28 0 0 1 740,566 V152 A28,28 0 0 1 768,124 Z" />
+    
+  <g transform="translate(782.0, 166.0) scale(2.5)" fill="#1565C0">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 16L12 14V10L13.6569 8.34314C15.1571 6.84285 16 4.80802 16 2.68629V0H13.3137C11.192 0 9.15714 0.842855 7.65685 2.34315L6 4H2L0 6L10 16ZM10.5 7C11.3284 7 12 6.32843 12 5.5C12 4.67157 11.3284 4 10.5 4C9.67157 4 9 4.67157 9 5.5C9 6.32843 9.67157 7 10.5 7Z" />
+    <path d="M4.9274 13.7558L2.24423 11.0726L0 15L1 16L4.9274 13.7558Z" />
+  </g>
+    <text x="842" y="194" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#1F2937">What this deck covers</text>
+
+    <g id="coverItem1">
+      <path fill="#EAF0F8" d="M800,230 H1142 A18,18 0 0 1 1160,248 V300 A18,18 0 0 1 1142,318 H800 A18,18 0 0 1 782,300 V248 A18,18 0 0 1 800,230 Z" />
+      <text x="812" y="264" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1565C0">01  Product position</text>
+      <text x="812" y="292" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472">Why PPT Master exists and how it differs from other AI slide paths.</text>
+    </g>
+
+    <g id="coverItem2">
+      <path fill="#EAF0F8" d="M800,338 H1142 A18,18 0 0 1 1160,356 V408 A18,18 0 0 1 1142,426 H800 A18,18 0 0 1 782,408 V356 A18,18 0 0 1 800,338 Z" />
+      <text x="812" y="372" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#00ACC1">02  Technical logic</text>
+      <text x="812" y="400" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472">Why SVG sits at the center of the system and how the pipeline works.</text>
+    </g>
+
+    <g id="coverItem3">
+      <path fill="#EAF0F8" d="M800,446 H1142 A18,18 0 0 1 1160,464 V516 A18,18 0 0 1 1142,534 H800 A18,18 0 0 1 782,516 V464 A18,18 0 0 1 800,446 Z" />
+      <text x="812" y="480" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#7C4DFF">03  Setup and fit</text>
+      <text x="812" y="508" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472">What users should expect, how to get running on Windows, and who should use it.</text>
+    </g>
+  </g>
+
+  <g id="pills">
+    <path fill="#1565C0" fill-opacity="0.10" d="M105,496 H251 A21,21 0 0 1 272,517 V517 A21,21 0 0 1 251,538 H105 A21,21 0 0 1 84,517 V517 A21,21 0 0 1 105,496 Z" />
+    <text x="178" y="523" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" font-weight="700" fill="#1565C0">Editable output</text>
+    <path fill="#00ACC1" fill-opacity="0.10" d="M307,496 H431 A21,21 0 0 1 452,517 V517 A21,21 0 0 1 431,538 H307 A21,21 0 0 1 286,517 V517 A21,21 0 0 1 307,496 Z" />
+    <text x="369" y="523" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" font-weight="700" fill="#00ACC1">Local workflow</text>
+    <path fill="#7C4DFF" fill-opacity="0.10" d="M487,496 H609 A21,21 0 0 1 630,517 V517 A21,21 0 0 1 609,538 H487 A21,21 0 0 1 466,517 V517 A21,21 0 0 1 487,496 Z" />
+    <text x="548" y="523" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" font-weight="700" fill="#7C4DFF">Open framework</text>
+  </g>
+
+  <text x="84" y="660" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="14" fill="#8B95A7">Source set: why-ppt-master.md, technical-design.md, faq.md, windows-installation.md</text>
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" fill="#8B95A7">01</text>
+</svg>

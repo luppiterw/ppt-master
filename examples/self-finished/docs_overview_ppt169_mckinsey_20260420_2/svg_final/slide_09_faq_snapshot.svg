@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#005587" /><text x="60" y="86" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="34" font-weight="700" fill="#2C3E50">What users usually ask first</text>
+  <text x="60" y="116" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" fill="#5D6D7E">The FAQ clusters into four simple buckets: input, output, visuals, and operating assumptions.</text>
+
+  <g id="faq1" filter="url(#softShadow)">
+    <path fill="#ECF0F1" d="M86,164 H590 A26,26 0 0 1 616,190 V358 A26,26 0 0 1 590,384 H86 A26,26 0 0 1 60,358 V190 A26,26 0 0 1 86,164 Z" />
+    
+  <g transform="translate(96.0, 198.0) scale(2.375)" fill="#005587">
+    <path d="M0 1H5L8 3H13V5H3.7457L2.03141 11H4.11144L5.2543 7H16L14 14H0V1Z" />
+  </g>
+    <text x="150" y="224" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">What can it read?</text>
+    <text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="16" x="96" y="272">PDF, DOCX, PPTX, EPUB, HTML, LaTeX, RST, URLs, Markdown, and plain text.</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="16" x="96" y="296">The source conversion layer is intentionally broad.</text></g>
+
+  <g id="faq2" filter="url(#softShadow)">
+    <path fill="#ECF0F1" d="M690,164 H1194 A26,26 0 0 1 1220,190 V358 A26,26 0 0 1 1194,384 H690 A26,26 0 0 1 664,358 V190 A26,26 0 0 1 690,164 Z" />
+    
+  <g transform="translate(700.0, 198.0) scale(2.375)" fill="#0076A8">
+    <path d="M1 5V3L8 0L15 3V5L8 8L1 5Z" />
+    <path d="M8 16L1 13V11L8 14L15 11V13L8 16Z" />
+    <path d="M1 9L8 12L15 9V7L8 10L1 7V9Z" />
+  </g>
+    <text x="754" y="224" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">What does it export?</text>
+    <text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="16" x="700" y="272">A native editable `.pptx` and an `_svg.pptx` reference backup, both timestamped.</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="16" x="700" y="296">The editable deck is the primary artifact.</text></g>
+
+  <g id="faq3" filter="url(#softShadow)">
+    <path fill="#ECF0F1" d="M86,414 H590 A26,26 0 0 1 616,440 V608 A26,26 0 0 1 590,634 H86 A26,26 0 0 1 60,608 V440 A26,26 0 0 1 86,414 Z" />
+    
+  <g transform="translate(96.0, 448.0) scale(2.375)" fill="#F5A623">
+    <path d="M16 1H12V15H16V1Z" />
+    <path d="M6 5H10V15H6V5Z" />
+    <path d="M0 9H4V15H0V9Z" />
+  </g>
+    <text x="150" y="474" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Are charts editable?</text>
+    <text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="16" x="96" y="522">They are converted into visual native shapes, not Excel-bound chart objects.</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="16" x="96" y="546">They look polished but are not data-linked spreadsheet charts.</text></g>
+
+  <g id="faq4" filter="url(#softShadow)">
+    <path fill="#ECF0F1" d="M690,414 H1194 A26,26 0 0 1 1220,440 V608 A26,26 0 0 1 1194,634 H690 A26,26 0 0 1 664,608 V440 A26,26 0 0 1 690,414 Z" />
+    
+  <g transform="translate(700.0, 448.0) scale(2.375)" fill="#27AE60">
+    <path d="M2 0H7V6H2V0Z" />
+    <path d="M7 13V8H2V13H0V15H16V13H14V8H9V13H7Z" />
+    <path d="M9 0V6H14V0H9Z" />
+  </g>
+    <text x="754" y="474" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Which formats are supported?</text>
+    <text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="16" x="700" y="522">Standard slides plus social and marketing canvases such as RED, square post,</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="16" x="700" y="546">Story, WeChat header, and A4 print.</text></g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="12" fill="#7F8C8D">09</text>
+</svg>

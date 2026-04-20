@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7"/>
+      <feOffset dx="0" dy="4" result="offsetBlur"/>
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#F7F9FC"/>
+  <text x="60" y="86" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#1F2937">Four approaches, four different trade-offs</text>
+  <text x="60" y="116" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">The product story is built on rejecting three unsatisfying paths.</text>
+
+  <g id="col1" filter="url(#softShadow)">
+    <rect x="60" y="160" width="270" height="472" rx="24" fill="#FFFFFF"/>
+    <rect x="60" y="160" width="270" height="12" rx="6" fill="#D84315"/>
+    <text x="88" y="214" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">Embed images</text>
+    <text x="88" y="248" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#D84315">Looks polished, loses editability</text>
+    <text x="88" y="312" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472">
+      <tspan x="88" dy="0">- Everything becomes a flat visual</tspan>
+      <tspan x="88" dy="25">- Text cannot be selected</tspan>
+      <tspan x="88" dy="25">- Scaling behaves like a screenshot</tspan>
+    </text>
+  </g>
+
+  <g id="col2" filter="url(#softShadow)">
+    <rect x="350" y="160" width="270" height="472" rx="24" fill="#FFFFFF"/>
+    <rect x="350" y="160" width="270" height="12" rx="6" fill="#D84315"/>
+    <text x="378" y="214" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">HTML/CSS export</text>
+    <text x="378" y="248" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#D84315">Strong on the web, weak in PPT</text>
+    <text x="378" y="312" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472">
+      <tspan x="378" dy="0">- Browser flow is not slide geometry</tspan>
+      <tspan x="378" dy="25">- Layouts break on export</tspan>
+      <tspan x="378" dy="25">- Elements often get flattened</tspan>
+    </text>
+  </g>
+
+  <g id="col3" filter="url(#softShadow)">
+    <rect x="640" y="160" width="270" height="472" rx="24" fill="#FFFFFF"/>
+    <rect x="640" y="160" width="270" height="12" rx="6" fill="#D84315"/>
+    <text x="668" y="214" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">Direct python-pptx</text>
+    <text x="668" y="248" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#D84315">Editable objects, weak visuals</text>
+    <text x="668" y="312" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472">
+      <tspan x="668" dy="0">- AI has less design-native training data</tspan>
+      <tspan x="668" dy="25">- Results skew toward boxes and bullets</tspan>
+      <tspan x="668" dy="25">- Complex design systems are hard to express</tspan>
+    </text>
+  </g>
+
+  <g id="col4" filter="url(#softShadow)">
+    <rect x="930" y="160" width="290" height="472" rx="24" fill="#FFFFFF"/>
+    <rect x="930" y="160" width="290" height="12" rx="6" fill="#1565C0"/>
+    <use data-icon="chunk/chart-bar" x="958" y="193" width="32" height="32" fill="#1565C0"/>
+    <text x="1008" y="214" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">PPT Master path</text>
+    <text x="958" y="248" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#1565C0">SVG -> post-process -> DrawingML</text>
+    <text x="958" y="312" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472">
+      <tspan x="958" dy="0">- Keeps the vector/canvas mindset intact</tspan>
+      <tspan x="958" dy="25">- Preserves editable native slide objects</tspan>
+      <tspan x="958" dy="25">- Makes the engineering transformation explicit</tspan>
+    </text>
+    <rect x="958" y="510" width="234" height="74" rx="18" fill="#EAF0F8"/>
+    <text x="986" y="540" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#1F2937">Positioning summary</text>
+    <text x="986" y="566" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="14" fill="#5B6472">A bridge between design quality and object-level editability.</text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" fill="#8B95A7">03</text>
+</svg>

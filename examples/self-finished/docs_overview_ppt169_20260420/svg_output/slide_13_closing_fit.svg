@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="4" result="offsetBlur"/>
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#7C4DFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="#F7F9FC"/>
+  <text x="60" y="86" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="url(#titleGrad)">Choose PPT Master when editability matters more than instant browser output</text>
+  <text x="60" y="116" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">The docs close with a clear boundary: this is a serious workflow for serious slide users.</text>
+
+  <g id="pros" filter="url(#softShadow)">
+    <rect x="60" y="170" width="550" height="426" rx="28" fill="#FFFFFF"/>
+    <rect x="60" y="170" width="550" height="70" rx="28" fill="#2E7D32"/>
+    <text x="335" y="214" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">Best fit</text>
+    <text x="102" y="288" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1F2937">Use it when you want:</text>
+    <text x="102" y="336" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">
+      <tspan x="102" dy="0">- Native editable output for real delivery work</tspan>
+      <tspan x="102" dy="28">- Transparent cost without platform subscription lock-in</tspan>
+      <tspan x="102" dy="28">- Local handling of source materials and exports</tspan>
+      <tspan x="102" dy="28">- Freedom to pair the workflow with your preferred AI IDE</tspan>
+    </text>
+  </g>
+
+  <g id="cons" filter="url(#softShadow)">
+    <rect x="670" y="170" width="550" height="426" rx="28" fill="#FFFFFF"/>
+    <rect x="670" y="170" width="550" height="70" rx="28" fill="#D84315"/>
+    <text x="945" y="214" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">Not the right fit</text>
+    <text x="712" y="288" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1F2937">Skip it if you need:</text>
+    <text x="712" y="336" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">
+      <tspan x="712" dy="0">- Zero-setup instant slides in a browser UI</tspan>
+      <tspan x="712" dy="28">- Real-time collaboration and share-link workflows</tspan>
+      <tspan x="712" dy="28">- Spreadsheet-bound native chart objects</tspan>
+      <tspan x="712" dy="28">- A fully polished final deck with no human review</tspan>
+    </text>
+  </g>
+
+  <g id="footerStatement">
+    <text x="60" y="658" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#1F2937">PPT Master is not the easiest path. It is the path optimized for editable, controllable output.</text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" fill="#8B95A7">13</text>
+</svg>

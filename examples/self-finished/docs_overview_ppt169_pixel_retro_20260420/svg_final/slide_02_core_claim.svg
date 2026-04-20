@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14" />
+      <stop offset="100%" stop-color="#00D4FF" />
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#0D1117" />
+  <rect x="0" y="0" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><rect x="0" y="6" width="640" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="714" width="1280" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="716" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><rect x="58" y="42" width="1164" height="2" fill="#30363D" />
+  <text x="60" y="92" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="34" font-weight="700" fill="#39FF14">A real PowerPoint workflow, not a screenshot export</text>
+  <text x="60" y="122" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">The core message across the docs is simple: the output must stay editable.</text>
+
+  <g id="claimCard" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M66,164 H530 A6,6 0 0 1 536,170 V630 A6,6 0 0 1 530,636 H66 A6,6 0 0 1 60,630 V170 A6,6 0 0 1 66,164 Z" />
+    <path fill="#39FF14" fill-opacity="0.03" d="M88,164 H508 A28,28 0 0 1 536,192 V608 A28,28 0 0 1 508,636 H88 A28,28 0 0 1 60,608 V192 A28,28 0 0 1 88,164 Z" />
+    
+  <g transform="translate(98.0, 204.0) scale(2.75)" fill="#39FF14">
+    <path d="M1 5V3L8 0L15 3V5L8 8L1 5Z" />
+    <path d="M8 16L1 13V11L8 14L15 11V13L8 16Z" />
+    <path d="M1 9L8 12L15 9V7L8 10L1 7V9Z" />
+  </g>
+    <text x="162" y="235" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="24" font-weight="700" fill="#E6EDF3">Core differentiator</text>
+    <text fill="#E6EDF3" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-weight="700" font-size="30" x="98" y="306">If it cannot be opened and</text><text fill="#E6EDF3" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-weight="700" font-size="30" x="98" y="348">edited like a real deck,</text><text fill="#E6EDF3" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-weight="700" font-size="30" x="98" y="390">it should not be called a PPT.</text><path fill="#161B22" stroke="#30363D" stroke-width="2" d="M104,458 H488 A6,6 0 0 1 494,464 V570 A6,6 0 0 1 488,576 H104 A6,6 0 0 1 98,570 V464 A6,6 0 0 1 104,458 Z" />
+    <text x="126" y="496" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" font-weight="700" fill="#39FF14">Implication</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="126" y="526">The system is optimized around native shapes, text boxes,</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="126" y="550">and engineering conversion, not just eye-catching screenshots.</text></g>
+
+  <g id="rightList">
+    <g id="item1" filter="url(#softShadow)">
+      <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M580,180 H1216 A6,6 0 0 1 1222,186 V292 A6,6 0 0 1 1216,298 H580 A6,6 0 0 1 574,292 V186 A6,6 0 0 1 580,180 Z" />
+      
+  <g transform="translate(608.0, 214.0) scale(2.125)" fill="#39FF14">
+    <path d="M16 1H12V15H16V1Z" />
+    <path d="M6 5H10V15H6V5Z" />
+    <path d="M0 9H4V15H0V9Z" />
+  </g>
+      <text x="660" y="235" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="700" fill="#E6EDF3">The deck is treated as a working file</text>
+      <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="660" y="266">The docs repeatedly frame the export as a usable artifact, not a frozen visual.</text></g>
+
+    <g id="item2" filter="url(#softShadow)">
+      <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M580,324 H1216 A6,6 0 0 1 1222,330 V436 A6,6 0 0 1 1216,442 H580 A6,6 0 0 1 574,436 V330 A6,6 0 0 1 580,324 Z" />
+      
+  <g transform="translate(608.0, 358.0) scale(2.125)" fill="#00D4FF">
+    <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z" />
+    <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z" />
+    <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z" />
+  </g>
+      <text x="660" y="379" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="700" fill="#E6EDF3">The engineering path is explicit</text>
+      <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="660" y="410">SVG generation, post-processing, and DrawingML export are all first-class steps.</text></g>
+
+    <g id="item3" filter="url(#softShadow)">
+      <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M580,468 H1216 A6,6 0 0 1 1222,474 V580 A6,6 0 0 1 1216,586 H580 A6,6 0 0 1 574,580 V474 A6,6 0 0 1 580,468 Z" />
+      
+  <g transform="translate(608.0, 502.0) scale(2.125)" fill="#FF2E97">
+    <path d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z" />
+    <path d="M14 12C14 10.3431 12.6569 9 11 9H5C3.34315 9 2 10.3431 2 12V15H14V12Z" />
+  </g>
+      <text x="660" y="523" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="700" fill="#E6EDF3">The user keeps final control</text>
+      <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="660" y="554">The AI does the heavy lifting, but the final mile still belongs to the presenter.</text></g>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#8B949E">02</text>
+</svg>

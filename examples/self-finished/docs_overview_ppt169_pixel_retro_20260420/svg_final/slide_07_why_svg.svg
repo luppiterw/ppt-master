@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#0D1117" />
+  <rect x="0" y="0" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><rect x="0" y="6" width="640" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="714" width="1280" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="716" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><text x="60" y="86" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="34" font-weight="700" fill="#39FF14">SVG is the practical bridge format</text>
+  <text x="60" y="116" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">The technical design doc explains the choice by elimination, not by trend.</text>
+
+  <g id="table" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M66,160 H1214 A6,6 0 0 1 1220,166 V628 A6,6 0 0 1 1214,634 H66 A6,6 0 0 1 60,628 V166 A6,6 0 0 1 66,160 Z" />
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M66,160 H1214 A6,6 0 0 1 1220,166 V228 A6,6 0 0 1 1214,234 H66 A6,6 0 0 1 60,228 V166 A6,6 0 0 1 66,160 Z" />
+    <text x="108" y="205" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="700" fill="#8B949E">Approach</text>
+    <text x="426" y="205" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="700" fill="#8B949E">Why it falls short</text>
+    <text x="930" y="205" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="700" fill="#39FF14">Why SVG wins here</text>
+
+    <line x1="360" y1="160" x2="360" y2="634" stroke="#D6DEEA" stroke-width="2" />
+    <line x1="850" y1="160" x2="850" y2="634" stroke="#D6DEEA" stroke-width="2" />
+    <line x1="60" y1="252" x2="1220" y2="252" stroke="#D6DEEA" stroke-width="2" />
+    <line x1="60" y1="348" x2="1220" y2="348" stroke="#D6DEEA" stroke-width="2" />
+    <line x1="60" y1="444" x2="1220" y2="444" stroke="#D6DEEA" stroke-width="2" />
+    <line x1="60" y1="540" x2="1220" y2="540" stroke="#D6DEEA" stroke-width="2" />
+
+    <text x="108" y="308" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="700" fill="#E6EDF3">Direct DrawingML</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="390" y="288">Too verbose for robust AI authoring.</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="390" y="310">Hard to debug by eye.</text><text x="882" y="308" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#39FF14">SVG keeps the vector logic readable before export.</text>
+
+    <text x="108" y="404" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="700" fill="#E6EDF3">HTML/CSS</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="390" y="384">Great for document flow and browsers,</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="390" y="406">weak for independent slide objects.</text><text x="882" y="404" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#39FF14">SVG matches the slide canvas worldview.</text>
+
+    <text x="108" y="500" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="700" fill="#E6EDF3">WMF / EMF</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="390" y="480">Closer to Microsoft graphics internally,</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="390" y="502">but nearly useless as an AI authoring target.</text><text x="882" y="500" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#39FF14">SVG has far better model familiarity and visual inspectability.</text>
+
+    <text x="108" y="596" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="700" fill="#E6EDF3">SVG as image only</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="390" y="576">Easy export path, but editability disappears.</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="390" y="598">Everything becomes a static visual.</text><text x="882" y="596" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#39FF14">PPT Master uses SVG as an intermediate engineering artifact, not as the final image.</text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#8B949E">07</text>
+</svg>

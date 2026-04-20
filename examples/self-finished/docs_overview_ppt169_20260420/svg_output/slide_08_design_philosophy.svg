@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="4" result="offsetBlur"/>
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#F7F9FC"/>
+  <text x="60" y="86" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#1F2937">AI is the designer, not the finisher</text>
+  <text x="60" y="116" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">The docs are unusually direct: this is a draft generator for professionals, not a magic finalizer.</text>
+
+  <g id="leftPanel" filter="url(#softShadow)">
+    <rect x="60" y="166" width="484" height="468" rx="28" fill="#1565C0"/>
+    <text x="100" y="262" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="40" font-weight="700" fill="#FFFFFF">
+      <tspan x="100" dy="0">The goal is to remove</tspan>
+      <tspan x="100" dy="52">most of the blank-page work,</tspan>
+      <tspan x="100" dy="52">not to replace judgment.</tspan>
+    </text>
+    <text x="100" y="472" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" fill="#FFFFFF" fill-opacity="0.88">
+      <tspan x="100" dy="0">Think of it as an architect's rendering:</tspan>
+      <tspan x="100" dy="26">strong direction, clear structure,</tspan>
+      <tspan x="100" dy="26">but still open to human finishing work.</tspan>
+    </text>
+  </g>
+
+  <g id="rightTop" filter="url(#softShadow)">
+    <rect x="584" y="166" width="636" height="214" rx="24" fill="#FFFFFF"/>
+    <text x="618" y="208" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">What the workflow expects from the user</text>
+    <text x="618" y="252" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">
+      <tspan x="618" dy="0">- Review visual output slide by slide when quality matters</tspan>
+      <tspan x="618" dy="26">- Regenerate or manually adjust pages with layout defects</tspan>
+      <tspan x="618" dy="26">- Use taste and context to finish the last mile in PowerPoint</tspan>
+    </text>
+  </g>
+
+  <g id="rightBottom" filter="url(#softShadow)">
+    <rect x="584" y="404" width="636" height="230" rx="24" fill="#FFFFFF"/>
+    <text x="618" y="446" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">What the workflow admits openly</text>
+    <text x="618" y="490" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">
+      <tspan x="618" dy="0">- Setup is heavier than browser-based SaaS tools</tspan>
+      <tspan x="618" dy="26">- Serial generation is slower, but is used to preserve consistency</tspan>
+      <tspan x="618" dy="26">- Charts look strong, but are not spreadsheet-bound native chart objects</tspan>
+      <tspan x="618" dy="26">- Collaboration and drag-and-drop UI are not the product's strength</tspan>
+    </text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" fill="#8B95A7">08</text>
+</svg>

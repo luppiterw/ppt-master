@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#0D1117" />
+  <rect x="0" y="0" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><rect x="0" y="6" width="640" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="714" width="1280" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="716" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><text x="60" y="86" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="34" font-weight="700" fill="#39FF14">Four approaches, four different trade-offs</text>
+  <text x="60" y="116" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">The product story is built on rejecting three unsatisfying paths.</text>
+
+  <g id="col1" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M66,160 H324 A6,6 0 0 1 330,166 V626 A6,6 0 0 1 324,632 H66 A6,6 0 0 1 60,626 V166 A6,6 0 0 1 66,160 Z" />
+    <path fill="#FFD700" d="M66,160 H324 A6,6 0 0 1 330,166 V166 A6,6 0 0 1 324,172 H66 A6,6 0 0 1 60,166 V166 A6,6 0 0 1 66,160 Z" />
+    <text x="88" y="214" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Embed images</text>
+    <text x="88" y="248" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#FFD700">Looks polished, loses editability</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="88" y="312">- Everything becomes a flat visual</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="88" y="337">- Text cannot be selected</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="88" y="362">- Scaling behaves like a screenshot</text></g>
+
+  <g id="col2" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M356,160 H614 A6,6 0 0 1 620,166 V626 A6,6 0 0 1 614,632 H356 A6,6 0 0 1 350,626 V166 A6,6 0 0 1 356,160 Z" />
+    <path fill="#FFD700" d="M356,160 H614 A6,6 0 0 1 620,166 V166 A6,6 0 0 1 614,172 H356 A6,6 0 0 1 350,166 V166 A6,6 0 0 1 356,160 Z" />
+    <text x="378" y="214" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">HTML/CSS export</text>
+    <text x="378" y="248" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#FFD700">Strong on the web, weak in PPT</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="378" y="312">- Browser flow is not slide geometry</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="378" y="337">- Layouts break on export</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="378" y="362">- Elements often get flattened</text></g>
+
+  <g id="col3" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M646,160 H904 A6,6 0 0 1 910,166 V626 A6,6 0 0 1 904,632 H646 A6,6 0 0 1 640,626 V166 A6,6 0 0 1 646,160 Z" />
+    <path fill="#FFD700" d="M646,160 H904 A6,6 0 0 1 910,166 V166 A6,6 0 0 1 904,172 H646 A6,6 0 0 1 640,166 V166 A6,6 0 0 1 646,160 Z" />
+    <text x="668" y="214" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Direct python-pptx</text>
+    <text x="668" y="248" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#FFD700">Editable objects, weak visuals</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="668" y="312">- AI has less design-native training data</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="668" y="337">- Results skew toward boxes and bullets</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="668" y="362">- Complex design systems are hard to express</text></g>
+
+  <g id="col4" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M936,160 H1214 A6,6 0 0 1 1220,166 V626 A6,6 0 0 1 1214,632 H936 A6,6 0 0 1 930,626 V166 A6,6 0 0 1 936,160 Z" />
+    <path fill="#39FF14" d="M936,160 H1214 A6,6 0 0 1 1220,166 V166 A6,6 0 0 1 1214,172 H936 A6,6 0 0 1 930,166 V166 A6,6 0 0 1 936,160 Z" />
+    
+  <g transform="translate(958.0, 193.0) scale(2.0)" fill="#39FF14">
+    <path d="M16 1H12V15H16V1Z" />
+    <path d="M6 5H10V15H6V5Z" />
+    <path d="M0 9H4V15H0V9Z" />
+  </g>
+    <text x="1008" y="214" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">PPT Master path</text>
+    <text x="958" y="248" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#39FF14">SVG -&gt; post-process -&gt; DrawingML</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="958" y="312">- Keeps the vector/canvas mindset intact</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="958" y="337">- Preserves editable native slide objects</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="958" y="362">- Makes the engineering transformation explicit</text><path fill="#161B22" stroke="#30363D" stroke-width="2" d="M964,510 H1186 A6,6 0 0 1 1192,516 V578 A6,6 0 0 1 1186,584 H964 A6,6 0 0 1 958,578 V516 A6,6 0 0 1 964,510 Z" />
+    <text x="986" y="540" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" font-weight="700" fill="#E6EDF3">Positioning summary</text>
+    <text x="986" y="566" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#8B949E">A bridge between design quality and object-level editability.</text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#8B949E">03</text>
+</svg>

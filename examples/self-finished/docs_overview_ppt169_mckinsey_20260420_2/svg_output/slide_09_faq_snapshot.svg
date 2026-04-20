@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#005587" /><text x="60" y="86" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="34" font-weight="700" fill="#2C3E50">What users usually ask first</text>
+  <text x="60" y="116" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" fill="#5D6D7E">The FAQ clusters into four simple buckets: input, output, visuals, and operating assumptions.</text>
+
+  <g id="faq1" filter="url(#softShadow)">
+    <rect x="60" y="164" width="556" height="220" rx="26" fill="#ECF0F1" />
+    <use data-icon="chunk/folder-open" x="96" y="198" width="38" height="38" fill="#005587" />
+    <text x="150" y="224" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">What can it read?</text>
+    <text x="96" y="272" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" fill="#5D6D7E">
+      <tspan x="96" dy="0">PDF, DOCX, PPTX, EPUB, HTML, LaTeX, RST, URLs, Markdown, and plain text.</tspan>
+      <tspan x="96" dy="24">The source conversion layer is intentionally broad.</tspan>
+    </text>
+  </g>
+
+  <g id="faq2" filter="url(#softShadow)">
+    <rect x="664" y="164" width="556" height="220" rx="26" fill="#ECF0F1" />
+    <use data-icon="chunk/layers" x="700" y="198" width="38" height="38" fill="#0076A8" />
+    <text x="754" y="224" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">What does it export?</text>
+    <text x="700" y="272" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" fill="#5D6D7E">
+      <tspan x="700" dy="0">A native editable `.pptx` and an `_svg.pptx` reference backup, both timestamped.</tspan>
+      <tspan x="700" dy="24">The editable deck is the primary artifact.</tspan>
+    </text>
+  </g>
+
+  <g id="faq3" filter="url(#softShadow)">
+    <rect x="60" y="414" width="556" height="220" rx="26" fill="#ECF0F1" />
+    <use data-icon="chunk/chart-bar" x="96" y="448" width="38" height="38" fill="#F5A623" />
+    <text x="150" y="474" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Are charts editable?</text>
+    <text x="96" y="522" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" fill="#5D6D7E">
+      <tspan x="96" dy="0">They are converted into visual native shapes, not Excel-bound chart objects.</tspan>
+      <tspan x="96" dy="24">They look polished but are not data-linked spreadsheet charts.</tspan>
+    </text>
+  </g>
+
+  <g id="faq4" filter="url(#softShadow)">
+    <rect x="664" y="414" width="556" height="220" rx="26" fill="#ECF0F1" />
+    <use data-icon="chunk/window" x="700" y="448" width="38" height="38" fill="#27AE60" />
+    <text x="754" y="474" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Which formats are supported?</text>
+    <text x="700" y="522" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" fill="#5D6D7E">
+      <tspan x="700" dy="0">Standard slides plus social and marketing canvases such as RED, square post,</tspan>
+      <tspan x="700" dy="24">Story, WeChat header, and A4 print.</tspan>
+    </text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="12" fill="#7F8C8D">09</text>
+</svg>

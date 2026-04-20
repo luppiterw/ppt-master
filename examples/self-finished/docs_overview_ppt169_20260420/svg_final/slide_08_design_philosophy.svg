@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#F7F9FC" />
+  <text x="60" y="86" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#1F2937">AI is the designer, not the finisher</text>
+  <text x="60" y="116" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">The docs are unusually direct: this is a draft generator for professionals, not a magic finalizer.</text>
+
+  <g id="leftPanel" filter="url(#softShadow)">
+    <path fill="#1565C0" d="M88,166 H516 A28,28 0 0 1 544,194 V606 A28,28 0 0 1 516,634 H88 A28,28 0 0 1 60,606 V194 A28,28 0 0 1 88,166 Z" />
+    <text font-weight="700" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="40" fill="#FFFFFF" x="100" y="262">The goal is to remove</text><text font-weight="700" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="40" fill="#FFFFFF" x="100" y="314">most of the blank-page work,</text><text font-weight="700" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="40" fill="#FFFFFF" x="100" y="366">not to replace judgment.</text><text fill-opacity="0.88" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" fill="#FFFFFF" x="100" y="472">Think of it as an architect's rendering:</text><text fill-opacity="0.88" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" fill="#FFFFFF" x="100" y="498">strong direction, clear structure,</text><text fill-opacity="0.88" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="18" fill="#FFFFFF" x="100" y="524">but still open to human finishing work.</text></g>
+
+  <g id="rightTop" filter="url(#softShadow)">
+    <path fill="#FFFFFF" d="M608,166 H1196 A24,24 0 0 1 1220,190 V356 A24,24 0 0 1 1196,380 H608 A24,24 0 0 1 584,356 V190 A24,24 0 0 1 608,166 Z" />
+    <text x="618" y="208" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">What the workflow expects from the user</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472" x="618" y="252">- Review visual output slide by slide when quality matters</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472" x="618" y="278">- Regenerate or manually adjust pages with layout defects</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472" x="618" y="304">- Use taste and context to finish the last mile in PowerPoint</text></g>
+
+  <g id="rightBottom" filter="url(#softShadow)">
+    <path fill="#FFFFFF" d="M608,404 H1196 A24,24 0 0 1 1220,428 V610 A24,24 0 0 1 1196,634 H608 A24,24 0 0 1 584,610 V428 A24,24 0 0 1 608,404 Z" />
+    <text x="618" y="446" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">What the workflow admits openly</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472" x="618" y="490">- Setup is heavier than browser-based SaaS tools</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472" x="618" y="516">- Serial generation is slower, but is used to preserve consistency</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472" x="618" y="542">- Charts look strong, but are not spreadsheet-bound native chart objects</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472" x="618" y="568">- Collaboration and drag-and-drop UI are not the product's strength</text></g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" fill="#8B95A7">08</text>
+</svg>

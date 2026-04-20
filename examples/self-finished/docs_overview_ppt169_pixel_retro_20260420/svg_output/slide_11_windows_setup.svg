@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#0D1117" />
+  <rect x="0" y="0" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><rect x="0" y="6" width="640" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="714" width="1280" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="716" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><text x="60" y="86" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="34" font-weight="700" fill="#39FF14">The minimum Windows setup path</text>
+  <text x="60" y="116" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">The installation guide is intentionally short: install Python, clone the repo, install dependencies, verify imports.</text>
+
+  <line x1="150" y1="260" x2="1130" y2="260" stroke="#D6DEEA" stroke-width="4" />
+  <polygon points="430,260 414,248 414,272" fill="#C7D0DE" />
+  <polygon points="700,260 684,248 684,272" fill="#C7D0DE" />
+  <polygon points="970,260 954,248 954,272" fill="#C7D0DE" />
+
+  <g id="step1" filter="url(#softShadow)">
+    <circle cx="190" cy="260" r="42" fill="#39FF14" />
+    <text x="190" y="266" text-anchor="middle" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">1</text>
+    <rect x="60" y="340" width="260" height="264" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <text x="90" y="382" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Install Python 3.10+</text>
+    <text x="90" y="430" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#8B949E">
+      <tspan x="90" dy="0">The critical checkbox is adding</tspan>
+      <tspan x="90" dy="22">`python.exe` to PATH.</tspan>
+    </text>
+  </g>
+
+  <g id="step2" filter="url(#softShadow)">
+    <circle cx="460" cy="260" r="42" fill="#00D4FF" />
+    <text x="460" y="266" text-anchor="middle" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">2</text>
+    <rect x="330" y="340" width="260" height="264" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <text x="360" y="382" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Download the project</text>
+    <text x="360" y="430" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#8B949E">
+      <tspan x="360" dy="0">Use ZIP or `git clone`, then</tspan>
+      <tspan x="360" dy="22">open the repository in your AI IDE.</tspan>
+    </text>
+  </g>
+
+  <g id="step3" filter="url(#softShadow)">
+    <circle cx="730" cy="260" r="42" fill="#FF2E97" />
+    <text x="730" y="266" text-anchor="middle" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">3</text>
+    <rect x="600" y="340" width="260" height="264" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <text x="630" y="382" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Install dependencies</text>
+    <rect x="630" y="430" width="200" height="48" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <text x="730" y="460" text-anchor="middle" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#E6EDF3">pip install -r requirements.txt</text>
+  </g>
+
+  <g id="step4" filter="url(#softShadow)">
+    <circle cx="1000" cy="260" r="42" fill="#39FF14" />
+    <text x="1000" y="266" text-anchor="middle" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">4</text>
+    <rect x="870" y="340" width="350" height="264" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <text x="900" y="374" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">
+      <tspan x="900" dy="0">Verify and run</tspan>
+      <tspan x="900" dy="24">a tiny deck</tspan>
+    </text>
+    <rect x="900" y="430" width="290" height="62" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <text x="1045" y="455" text-anchor="middle" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#E6EDF3">python -c "import pptx; import fitz;"</text>
+    <text x="900" y="530" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#8B949E">Then ask the AI for a 3-page test deck to prove the setup works end to end.</text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#8B949E">11</text>
+</svg>

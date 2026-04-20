@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#0D1117" />
+  <rect x="0" y="0" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><rect x="0" y="6" width="640" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="714" width="1280" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="716" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><text x="60" y="86" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="34" font-weight="700" fill="#39FF14">Understand, generate, convert</text>
+  <text x="60" y="116" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">The technical design doc simplifies the entire engine into three distinct phases.</text>
+
+  <line x1="160" y1="258" x2="1120" y2="258" stroke="#D6DEEA" stroke-width="4" />
+  <polygon points="470,258 454,246 454,270" fill="#C7D0DE" />
+  <polygon points="790,258 774,246 774,270" fill="#C7D0DE" />
+
+  <g id="step1" filter="url(#softShadow)">
+    <circle cx="220" cy="258" r="44" fill="#39FF14" />
+    <text x="220" y="250" text-anchor="middle" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="24" font-weight="700" fill="#FFFFFF">01</text>
+    <text x="220" y="270" text-anchor="middle" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">STAGE</text>
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M96,338 H344 A6,6 0 0 1 350,344 V592 A6,6 0 0 1 344,598 H96 A6,6 0 0 1 90,592 V344 A6,6 0 0 1 96,338 Z" />
+    <text x="120" y="380" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Content understanding</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="120" y="416">Source files are transformed into structured</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="120" y="438">text, then interpreted into a slide narrative.</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="120" y="468">The strategist defines the deck before</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="120" y="490">visual execution begins.</text></g>
+
+  <g id="step2" filter="url(#softShadow)">
+    <circle cx="540" cy="258" r="44" fill="#00D4FF" />
+    <text x="540" y="250" text-anchor="middle" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="24" font-weight="700" fill="#FFFFFF">02</text>
+    <text x="540" y="270" text-anchor="middle" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">STAGE</text>
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M416,338 H664 A6,6 0 0 1 670,344 V592 A6,6 0 0 1 664,598 H416 A6,6 0 0 1 410,592 V344 A6,6 0 0 1 416,338 Z" />
+    <text x="440" y="380" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">AI visual generation</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="440" y="416">The executor authors each slide as SVG,</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="440" y="438">keeping the absolute-coordinate canvas mindset.</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="440" y="468">This stage creates the design draft.</text></g>
+
+  <g id="step3" filter="url(#softShadow)">
+    <circle cx="860" cy="258" r="44" fill="#FF2E97" />
+    <text x="860" y="250" text-anchor="middle" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="24" font-weight="700" fill="#FFFFFF">03</text>
+    <text x="860" y="270" text-anchor="middle" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">STAGE</text>
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M736,338 H984 A6,6 0 0 1 990,344 V592 A6,6 0 0 1 984,598 H736 A6,6 0 0 1 730,592 V344 A6,6 0 0 1 736,338 Z" />
+    <text x="760" y="380" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Engineering conversion</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="760" y="416">Post-processing and export translate the</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="760" y="438">vector draft into editable DrawingML objects.</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="760" y="468">This stage creates the delivery artifact.</text></g>
+
+  <g id="stage4" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M1056,338 H1214 A6,6 0 0 1 1220,344 V592 A6,6 0 0 1 1214,598 H1056 A6,6 0 0 1 1050,592 V344 A6,6 0 0 1 1056,338 Z" />
+    <text x="1080" y="382" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="700" fill="#E6EDF3">Output pair</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="1080" y="424">Native PPTX</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="1080" y="448">SVG backup</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" x="1080" y="472">Speaker notes</text></g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#8B949E">06</text>
+</svg>

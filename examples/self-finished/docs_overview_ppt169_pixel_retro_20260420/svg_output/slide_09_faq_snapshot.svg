@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#0D1117" />
+  <rect x="0" y="0" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><rect x="0" y="6" width="640" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="714" width="1280" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="716" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><text x="60" y="86" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="34" font-weight="700" fill="#39FF14">What users usually ask first</text>
+  <text x="60" y="116" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">The FAQ clusters into four simple buckets: input, output, visuals, and operating assumptions.</text>
+
+  <g id="faq1" filter="url(#softShadow)">
+    <rect x="60" y="164" width="556" height="220" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <use data-icon="chunk/folder-open" x="96" y="198" width="38" height="38" fill="#39FF14" />
+    <text x="150" y="224" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">What can it read?</text>
+    <text x="96" y="272" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">
+      <tspan x="96" dy="0">PDF, DOCX, PPTX, EPUB, HTML, LaTeX, RST, URLs, Markdown, and plain text.</tspan>
+      <tspan x="96" dy="24">The source conversion layer is intentionally broad.</tspan>
+    </text>
+  </g>
+
+  <g id="faq2" filter="url(#softShadow)">
+    <rect x="664" y="164" width="556" height="220" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <use data-icon="chunk/layers" x="700" y="198" width="38" height="38" fill="#00D4FF" />
+    <text x="754" y="224" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">What does it export?</text>
+    <text x="700" y="272" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">
+      <tspan x="700" dy="0">A native editable `.pptx` and an `_svg.pptx` reference backup, both timestamped.</tspan>
+      <tspan x="700" dy="24">The editable deck is the primary artifact.</tspan>
+    </text>
+  </g>
+
+  <g id="faq3" filter="url(#softShadow)">
+    <rect x="60" y="414" width="556" height="220" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <use data-icon="chunk/chart-bar" x="96" y="448" width="38" height="38" fill="#FF2E97" />
+    <text x="150" y="474" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Are charts editable?</text>
+    <text x="96" y="522" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">
+      <tspan x="96" dy="0">They are converted into visual native shapes, not Excel-bound chart objects.</tspan>
+      <tspan x="96" dy="24">They look polished but are not data-linked spreadsheet charts.</tspan>
+    </text>
+  </g>
+
+  <g id="faq4" filter="url(#softShadow)">
+    <rect x="664" y="414" width="556" height="220" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <use data-icon="chunk/window" x="700" y="448" width="38" height="38" fill="#39FF14" />
+    <text x="754" y="474" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Which formats are supported?</text>
+    <text x="700" y="522" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">
+      <tspan x="700" dy="0">Standard slides plus social and marketing canvases such as RED, square post,</tspan>
+      <tspan x="700" dy="24">Story, WeChat header, and A4 print.</tspan>
+    </text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#8B949E">09</text>
+</svg>

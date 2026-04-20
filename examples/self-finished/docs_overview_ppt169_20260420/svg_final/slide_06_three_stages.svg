@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#F7F9FC" />
+  <text x="60" y="86" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#1F2937">Understand, generate, convert</text>
+  <text x="60" y="116" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">The technical design doc simplifies the entire engine into three distinct phases.</text>
+
+  <line x1="160" y1="258" x2="1120" y2="258" stroke="#D6DEEA" stroke-width="4" />
+  <polygon points="470,258 454,246 454,270" fill="#C7D0DE" />
+  <polygon points="790,258 774,246 774,270" fill="#C7D0DE" />
+
+  <g id="step1" filter="url(#softShadow)">
+    <circle cx="220" cy="258" r="44" fill="#1565C0" />
+    <text x="220" y="250" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">01</text>
+    <text x="220" y="270" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">STAGE</text>
+    <path fill="#FFFFFF" d="M114,338 H326 A24,24 0 0 1 350,362 V574 A24,24 0 0 1 326,598 H114 A24,24 0 0 1 90,574 V362 A24,24 0 0 1 114,338 Z" />
+    <text x="120" y="380" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">Content understanding</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="120" y="416">Source files are transformed into structured</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="120" y="438">text, then interpreted into a slide narrative.</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="120" y="468">The strategist defines the deck before</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="120" y="490">visual execution begins.</text></g>
+
+  <g id="step2" filter="url(#softShadow)">
+    <circle cx="540" cy="258" r="44" fill="#00ACC1" />
+    <text x="540" y="250" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">02</text>
+    <text x="540" y="270" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">STAGE</text>
+    <path fill="#FFFFFF" d="M434,338 H646 A24,24 0 0 1 670,362 V574 A24,24 0 0 1 646,598 H434 A24,24 0 0 1 410,574 V362 A24,24 0 0 1 434,338 Z" />
+    <text x="440" y="380" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">AI visual generation</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="440" y="416">The executor authors each slide as SVG,</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="440" y="438">keeping the absolute-coordinate canvas mindset.</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="440" y="468">This stage creates the design draft.</text></g>
+
+  <g id="step3" filter="url(#softShadow)">
+    <circle cx="860" cy="258" r="44" fill="#7C4DFF" />
+    <text x="860" y="250" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">03</text>
+    <text x="860" y="270" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">STAGE</text>
+    <path fill="#FFFFFF" d="M754,338 H966 A24,24 0 0 1 990,362 V574 A24,24 0 0 1 966,598 H754 A24,24 0 0 1 730,574 V362 A24,24 0 0 1 754,338 Z" />
+    <text x="760" y="380" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">Engineering conversion</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="760" y="416">Post-processing and export translate the</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="760" y="438">vector draft into editable DrawingML objects.</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="760" y="468">This stage creates the delivery artifact.</text></g>
+
+  <g id="stage4" filter="url(#softShadow)">
+    <path fill="#FFFFFF" d="M1074,338 H1196 A24,24 0 0 1 1220,362 V574 A24,24 0 0 1 1196,598 H1074 A24,24 0 0 1 1050,574 V362 A24,24 0 0 1 1074,338 Z" />
+    <text x="1080" y="382" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#1F2937">Output pair</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="1080" y="424">Native PPTX</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="1080" y="448">SVG backup</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="1080" y="472">Speaker notes</text></g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" fill="#8B95A7">06</text>
+</svg>

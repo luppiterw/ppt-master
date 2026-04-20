@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#005587" />
+      <stop offset="100%" stop-color="#F5A623" />
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="84%" cy="16%" r="52%">
+      <stop offset="0%" stop-color="#0076A8" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#0076A8" stop-opacity="0" />
+    </radialGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.12" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#005587" /><rect x="44" y="56" width="8" height="590" fill="#005587" /><circle cx="1100" cy="92" r="170" fill="#005587" fill-opacity="0.06" />
+  <circle cx="1040" cy="620" r="210" fill="#F5A623" fill-opacity="0.05" />
+  <circle cx="180" cy="132" r="110" fill="#0076A8" fill-opacity="0.07" />
+
+  <g id="headerMark">
+    <rect x="64" y="56" width="58" height="8" rx="4" fill="#005587" />
+    <rect x="64" y="72" width="92" height="8" rx="4" fill="#0076A8" />
+  </g>
+
+  <g id="titleBlock">
+    <text x="84" y="214" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" font-weight="700" fill="#005587" letter-spacing="2">DOCUMENTATION SYNTHESIS</text>
+    <text x="84" y="302" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="66" font-weight="700" fill="#005587">PPT Master</text>
+    <text x="84" y="368" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="28" font-weight="700" fill="#2C3E50">Product, Architecture, and Setup Overview</text>
+    <text x="84" y="414" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="20" fill="#5D6D7E">A compact deck distilled from the project docs into a single narrative.</text>
+  </g>
+
+  <g id="heroCard" filter="url(#softShadow)">
+    <rect x="740" y="124" width="462" height="470" rx="28" fill="#ECF0F1" />
+    <rect x="740" y="124" width="462" height="470" rx="28" fill="#005587" fill-opacity="0.03" />
+    <use data-icon="chunk/rocket" x="782" y="166" width="40" height="40" fill="#005587" />
+    <text x="842" y="194" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="26" font-weight="700" fill="#2C3E50">What this deck covers</text>
+
+    <g id="coverItem1">
+      <rect x="782" y="230" width="378" height="88" rx="18" fill="#ECF0F1" />
+      <text x="812" y="264" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="18" font-weight="700" fill="#005587">01  Product position</text>
+      <text x="812" y="292" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="15" fill="#5D6D7E">Why PPT Master exists and how it differs from other AI slide paths.</text>
+    </g>
+
+    <g id="coverItem2">
+      <rect x="782" y="338" width="378" height="88" rx="18" fill="#ECF0F1" />
+      <text x="812" y="372" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="18" font-weight="700" fill="#0076A8">02  Technical logic</text>
+      <text x="812" y="400" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="15" fill="#5D6D7E">Why SVG sits at the center of the system and how the pipeline works.</text>
+    </g>
+
+    <g id="coverItem3">
+      <rect x="782" y="446" width="378" height="88" rx="18" fill="#ECF0F1" />
+      <text x="812" y="480" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="18" font-weight="700" fill="#F5A623">03  Setup and fit</text>
+      <text x="812" y="508" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="15" fill="#5D6D7E">What users should expect, how to get running on Windows, and who should use it.</text>
+    </g>
+  </g>
+
+  <g id="pills">
+    <rect x="84" y="496" width="188" height="42" rx="21" fill="#005587" fill-opacity="0.10" />
+    <text x="178" y="523" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="15" font-weight="700" fill="#005587">Editable output</text>
+    <rect x="286" y="496" width="166" height="42" rx="21" fill="#0076A8" fill-opacity="0.10" />
+    <text x="369" y="523" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="15" font-weight="700" fill="#0076A8">Local workflow</text>
+    <rect x="466" y="496" width="164" height="42" rx="21" fill="#F5A623" fill-opacity="0.10" />
+    <text x="548" y="523" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="15" font-weight="700" fill="#F5A623">Open framework</text>
+  </g>
+
+  <text x="84" y="660" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="14" fill="#7F8C8D">Source set: why-ppt-master.md, technical-design.md, faq.md, windows-installation.md</text>
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="12" fill="#7F8C8D">01</text>
+</svg>

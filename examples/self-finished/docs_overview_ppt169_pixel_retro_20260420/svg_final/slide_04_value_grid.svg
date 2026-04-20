@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#0D1117" />
+  <rect x="0" y="0" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><rect x="0" y="6" width="640" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="714" width="1280" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="716" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><text x="60" y="86" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="34" font-weight="700" fill="#39FF14">The framework is optimized for usable output</text>
+  <text x="60" y="116" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">The docs repeat four durable themes: editability, cost clarity, privacy, and openness.</text>
+
+  <g id="card1" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M66,166 H612 A6,6 0 0 1 618,172 V374 A6,6 0 0 1 612,380 H66 A6,6 0 0 1 60,374 V172 A6,6 0 0 1 66,166 Z" />
+    
+  <g transform="translate(96.0, 204.0) scale(2.625)" fill="#39FF14">
+    <path d="M1 5V3L8 0L15 3V5L8 8L1 5Z" />
+    <path d="M8 16L1 13V11L8 14L15 11V13L8 16Z" />
+    <path d="M1 9L8 12L15 9V7L8 10L1 7V9Z" />
+  </g>
+    <text x="154" y="232" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="24" font-weight="700" fill="#E6EDF3">Real PowerPoint output</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="96" y="286">The native deck is intended for editing and delivery, while the SVG backup deck</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="96" y="310">acts as a visual reference version.</text></g>
+
+  <g id="card2" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M668,166 H1214 A6,6 0 0 1 1220,172 V374 A6,6 0 0 1 1214,380 H668 A6,6 0 0 1 662,374 V172 A6,6 0 0 1 668,166 Z" />
+    
+  <g transform="translate(698.0, 204.0) scale(2.625)" fill="#00D4FF">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.21606 15L6.10495 16H8.11726L8.22837 15H10.003C12.2105 15 14 13.2105 14 11.003C14 9.12963 12.6989 7.5076 10.8701 7.1012L9.14852 6.71864L9.45059 4H13V1H9.78393L9.89504 0H7.88273L7.77162 1H5.99699C3.78951 1 2 2.78951 2 4.99699C2 6.87037 3.30115 8.4924 5.12992 8.8988L6.85147 9.28136L6.54939 12H3V15H6.21606ZM8.5617 12H10.003C10.5536 12 11 11.5536 11 11.003C11 10.5357 10.6754 10.1311 10.2193 10.0298L8.81528 9.71776L8.5617 12ZM7.1847 6.28223L7.43828 4H5.99699C5.44637 4 5 4.44637 5 4.99699C5 5.46427 5.32455 5.86887 5.78071 5.97023L7.1847 6.28223Z" />
+  </g>
+    <text x="756" y="232" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="24" font-weight="700" fill="#E6EDF3">Predictable cost profile</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="698" y="286">The tool itself is open source; the main variable cost is the AI editor or model</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="698" y="310">you already choose to use.</text></g>
+
+  <g id="card3" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M66,410 H612 A6,6 0 0 1 618,416 V618 A6,6 0 0 1 612,624 H66 A6,6 0 0 1 60,618 V416 A6,6 0 0 1 66,410 Z" />
+    
+  <g transform="translate(96.0, 448.0) scale(2.625)" fill="#39FF14">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16L4.35009 13.3929C2.24773 11.8912 1 9.46667 1 6.88306V3L8 0L15 3V6.88306C15 9.46667 13.7523 11.8912 11.6499 13.3929L8 16ZM12.2071 5.70711L10.7929 4.29289L7 8.08579L5.20711 6.29289L3.79289 7.70711L7 10.9142L12.2071 5.70711Z" />
+  </g>
+    <text x="154" y="476" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="24" font-weight="700" fill="#E6EDF3">Local-first data handling</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="96" y="530">Source conversion, SVG authoring, and PPTX export are kept on the user's machine.</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="96" y="554">That matters for finance, government, and private workflows.</text></g>
+
+  <g id="card4" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M668,410 H1214 A6,6 0 0 1 1220,416 V618 A6,6 0 0 1 1214,624 H668 A6,6 0 0 1 662,618 V416 A6,6 0 0 1 668,410 Z" />
+    
+  <g transform="translate(698.0, 448.0) scale(2.625)" fill="#FF2E97">
+    <path d="M6 0V4H10V0H12V4H15V6H13V8C13 10.419 11.2822 12.4367 9 12.9V16H7V12.9C4.71776 12.4367 3 10.419 3 8V6H1V4H4V0H6Z" />
+  </g>
+    <text x="756" y="476" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="24" font-weight="700" fill="#E6EDF3">No lock-in on editors or models</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="698" y="530">The project is presented as a framework that can work with multiple AI IDEs</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="698" y="554">and multiple model families.</text></g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#8B949E">04</text>
+</svg>

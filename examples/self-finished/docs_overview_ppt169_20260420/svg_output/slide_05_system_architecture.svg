@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7"/>
+      <feOffset dx="0" dy="4" result="offsetBlur"/>
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#F7F9FC"/>
+  <text x="60" y="86" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#1F2937">The workflow is a serial design-to-engineering pipeline</text>
+  <text x="60" y="116" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">The docs are explicit that every stage feeds the next and should not be parallelized blindly.</text>
+
+  <g id="flowLine">
+    <rect x="110" y="300" width="1060" height="8" rx="4" fill="#D6DEEA"/>
+    <polygon points="330,304 314,292 314,316" fill="#B5C1D4"/>
+    <polygon points="560,304 544,292 544,316" fill="#B5C1D4"/>
+    <polygon points="790,304 774,292 774,316" fill="#B5C1D4"/>
+    <polygon points="1020,304 1004,292 1004,316" fill="#B5C1D4"/>
+  </g>
+
+  <g id="node1" filter="url(#softShadow)">
+    <circle cx="170" cy="304" r="42" fill="#1565C0"/>
+    <text x="170" y="296" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">SOURCE</text>
+    <text x="170" y="314" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">INPUT</text>
+  </g>
+  <g id="box1" filter="url(#softShadow)">
+    <rect x="60" y="394" width="220" height="188" rx="22" fill="#FFFFFF"/>
+    <text x="88" y="432" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#1F2937">Normalize content</text>
+    <text x="88" y="468" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472">
+      <tspan x="88" dy="0">PDF, DOCX, URL, and Markdown</tspan>
+      <tspan x="88" dy="22">are converted into structured text.</tspan>
+    </text>
+  </g>
+
+  <g id="node2" filter="url(#softShadow)">
+    <circle cx="400" cy="304" r="42" fill="#00ACC1"/>
+    <text x="400" y="300" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">STRAT</text>
+    <text x="400" y="316" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">EGIST</text>
+  </g>
+  <g id="box2" filter="url(#softShadow)">
+    <rect x="290" y="394" width="220" height="188" rx="22" fill="#FFFFFF"/>
+    <text x="318" y="432" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#1F2937">Plan the deck</text>
+    <text x="318" y="468" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472">
+      <tspan x="318" dy="0">The strategist defines page count,</tspan>
+      <tspan x="318" dy="22">visual system, and content outline.</tspan>
+    </text>
+  </g>
+
+  <g id="node3" filter="url(#softShadow)">
+    <circle cx="630" cy="304" r="42" fill="#7C4DFF"/>
+    <text x="630" y="300" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">EXEC</text>
+    <text x="630" y="316" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">UTOR</text>
+  </g>
+  <g id="box3" filter="url(#softShadow)">
+    <rect x="520" y="394" width="220" height="188" rx="22" fill="#FFFFFF"/>
+    <text x="548" y="432" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#1F2937">Generate SVG pages</text>
+    <text x="548" y="468" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472">
+      <tspan x="548" dy="0">The main agent produces slide SVGs</tspan>
+      <tspan x="548" dy="22">and complete speaker notes.</tspan>
+    </text>
+  </g>
+
+  <g id="node4" filter="url(#softShadow)">
+    <circle cx="860" cy="304" r="42" fill="#2E7D32"/>
+    <text x="860" y="300" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">FINAL</text>
+    <text x="860" y="316" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">IZE</text>
+  </g>
+  <g id="box4" filter="url(#softShadow)">
+    <rect x="750" y="394" width="220" height="188" rx="22" fill="#FFFFFF"/>
+    <text x="778" y="432" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#1F2937">Post-process assets</text>
+    <text x="778" y="468" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472">
+      <tspan x="778" dy="0">Icons, images, text flattening,</tspan>
+      <tspan x="778" dy="22">and PowerPoint-safe cleanup happen here.</tspan>
+    </text>
+  </g>
+
+  <g id="node5" filter="url(#softShadow)">
+    <circle cx="1090" cy="304" r="42" fill="#D84315"/>
+    <text x="1090" y="300" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">PPTX</text>
+    <text x="1090" y="316" text-anchor="middle" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">OUT</text>
+  </g>
+  <g id="box5" filter="url(#softShadow)">
+    <rect x="980" y="394" width="240" height="188" rx="22" fill="#FFFFFF"/>
+    <text x="1008" y="432" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#1F2937">Export editable deck</text>
+    <text x="1008" y="468" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472">
+      <tspan x="1008" dy="0">The converter emits a native shapes</tspan>
+      <tspan x="1008" dy="22">deck plus an SVG reference backup.</tspan>
+    </text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" fill="#8B95A7">05</text>
+</svg>

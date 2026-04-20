@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#0D1117" />
+  <rect x="0" y="0" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><rect x="0" y="6" width="640" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="714" width="1280" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="716" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><text x="60" y="86" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="34" font-weight="700" fill="#39FF14">The framework is optimized for usable output</text>
+  <text x="60" y="116" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">The docs repeat four durable themes: editability, cost clarity, privacy, and openness.</text>
+
+  <g id="card1" filter="url(#softShadow)">
+    <rect x="60" y="166" width="558" height="214" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <use data-icon="chunk/layers" x="96" y="204" width="42" height="42" fill="#39FF14" />
+    <text x="154" y="232" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="24" font-weight="700" fill="#E6EDF3">Real PowerPoint output</text>
+    <text x="96" y="286" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">
+      <tspan x="96" dy="0">The native deck is intended for editing and delivery, while the SVG backup deck</tspan>
+      <tspan x="96" dy="24">acts as a visual reference version.</tspan>
+    </text>
+  </g>
+
+  <g id="card2" filter="url(#softShadow)">
+    <rect x="662" y="166" width="558" height="214" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <use data-icon="chunk/dollar" x="698" y="204" width="42" height="42" fill="#00D4FF" />
+    <text x="756" y="232" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="24" font-weight="700" fill="#E6EDF3">Predictable cost profile</text>
+    <text x="698" y="286" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">
+      <tspan x="698" dy="0">The tool itself is open source; the main variable cost is the AI editor or model</tspan>
+      <tspan x="698" dy="24">you already choose to use.</tspan>
+    </text>
+  </g>
+
+  <g id="card3" filter="url(#softShadow)">
+    <rect x="60" y="410" width="558" height="214" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <use data-icon="chunk/shield-check" x="96" y="448" width="42" height="42" fill="#39FF14" />
+    <text x="154" y="476" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="24" font-weight="700" fill="#E6EDF3">Local-first data handling</text>
+    <text x="96" y="530" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">
+      <tspan x="96" dy="0">Source conversion, SVG authoring, and PPTX export are kept on the user's machine.</tspan>
+      <tspan x="96" dy="24">That matters for finance, government, and private workflows.</tspan>
+    </text>
+  </g>
+
+  <g id="card4" filter="url(#softShadow)">
+    <rect x="662" y="410" width="558" height="214" rx="6" fill="#161B22" stroke="#30363D" stroke-width="2" />
+    <use data-icon="chunk/plug" x="698" y="448" width="42" height="42" fill="#FF2E97" />
+    <text x="756" y="476" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="24" font-weight="700" fill="#E6EDF3">No lock-in on editors or models</text>
+    <text x="698" y="530" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">
+      <tspan x="698" dy="0">The project is presented as a framework that can work with multiple AI IDEs</tspan>
+      <tspan x="698" dy="24">and multiple model families.</tspan>
+    </text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#8B949E">04</text>
+</svg>

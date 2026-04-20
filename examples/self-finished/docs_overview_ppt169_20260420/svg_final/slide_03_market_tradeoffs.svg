@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#F7F9FC" />
+  <text x="60" y="86" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#1F2937">Four approaches, four different trade-offs</text>
+  <text x="60" y="116" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">The product story is built on rejecting three unsatisfying paths.</text>
+
+  <g id="col1" filter="url(#softShadow)">
+    <path fill="#FFFFFF" d="M84,160 H306 A24,24 0 0 1 330,184 V608 A24,24 0 0 1 306,632 H84 A24,24 0 0 1 60,608 V184 A24,24 0 0 1 84,160 Z" />
+    <path fill="#D84315" d="M66,160 H324 A6,6 0 0 1 330,166 V166 A6,6 0 0 1 324,172 H66 A6,6 0 0 1 60,166 V166 A6,6 0 0 1 66,160 Z" />
+    <text x="88" y="214" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">Embed images</text>
+    <text x="88" y="248" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#D84315">Looks polished, loses editability</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="88" y="312">- Everything becomes a flat visual</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="88" y="337">- Text cannot be selected</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="88" y="362">- Scaling behaves like a screenshot</text></g>
+
+  <g id="col2" filter="url(#softShadow)">
+    <path fill="#FFFFFF" d="M374,160 H596 A24,24 0 0 1 620,184 V608 A24,24 0 0 1 596,632 H374 A24,24 0 0 1 350,608 V184 A24,24 0 0 1 374,160 Z" />
+    <path fill="#D84315" d="M356,160 H614 A6,6 0 0 1 620,166 V166 A6,6 0 0 1 614,172 H356 A6,6 0 0 1 350,166 V166 A6,6 0 0 1 356,160 Z" />
+    <text x="378" y="214" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">HTML/CSS export</text>
+    <text x="378" y="248" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#D84315">Strong on the web, weak in PPT</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="378" y="312">- Browser flow is not slide geometry</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="378" y="337">- Layouts break on export</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="378" y="362">- Elements often get flattened</text></g>
+
+  <g id="col3" filter="url(#softShadow)">
+    <path fill="#FFFFFF" d="M664,160 H886 A24,24 0 0 1 910,184 V608 A24,24 0 0 1 886,632 H664 A24,24 0 0 1 640,608 V184 A24,24 0 0 1 664,160 Z" />
+    <path fill="#D84315" d="M646,160 H904 A6,6 0 0 1 910,166 V166 A6,6 0 0 1 904,172 H646 A6,6 0 0 1 640,166 V166 A6,6 0 0 1 646,160 Z" />
+    <text x="668" y="214" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">Direct python-pptx</text>
+    <text x="668" y="248" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#D84315">Editable objects, weak visuals</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="668" y="312">- AI has less design-native training data</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="668" y="337">- Results skew toward boxes and bullets</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="668" y="362">- Complex design systems are hard to express</text></g>
+
+  <g id="col4" filter="url(#softShadow)">
+    <path fill="#FFFFFF" d="M954,160 H1196 A24,24 0 0 1 1220,184 V608 A24,24 0 0 1 1196,632 H954 A24,24 0 0 1 930,608 V184 A24,24 0 0 1 954,160 Z" />
+    <path fill="#1565C0" d="M936,160 H1214 A6,6 0 0 1 1220,166 V166 A6,6 0 0 1 1214,172 H936 A6,6 0 0 1 930,166 V166 A6,6 0 0 1 936,160 Z" />
+    
+  <g transform="translate(958.0, 193.0) scale(2.0)" fill="#1565C0">
+    <path d="M16 1H12V15H16V1Z" />
+    <path d="M6 5H10V15H6V5Z" />
+    <path d="M0 9H4V15H0V9Z" />
+  </g>
+    <text x="1008" y="214" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">PPT Master path</text>
+    <text x="958" y="248" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#1565C0">SVG -&gt; post-process -&gt; DrawingML</text>
+    <text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="958" y="312">- Keeps the vector/canvas mindset intact</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="958" y="337">- Preserves editable native slide objects</text><text font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="15" fill="#5B6472" x="958" y="362">- Makes the engineering transformation explicit</text><path fill="#EAF0F8" d="M976,510 H1174 A18,18 0 0 1 1192,528 V566 A18,18 0 0 1 1174,584 H976 A18,18 0 0 1 958,566 V528 A18,18 0 0 1 976,510 Z" />
+    <text x="986" y="540" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#1F2937">Positioning summary</text>
+    <text x="986" y="566" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="14" fill="#5B6472">A bridge between design quality and object-level editability.</text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" fill="#8B95A7">03</text>
+</svg>

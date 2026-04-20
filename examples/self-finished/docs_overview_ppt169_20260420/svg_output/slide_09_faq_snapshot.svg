@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="4" result="offsetBlur"/>
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#F7F9FC"/>
+  <text x="60" y="86" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#1F2937">What users usually ask first</text>
+  <text x="60" y="116" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">The FAQ clusters into four simple buckets: input, output, visuals, and operating assumptions.</text>
+
+  <g id="faq1" filter="url(#softShadow)">
+    <rect x="60" y="164" width="556" height="220" rx="26" fill="#FFFFFF"/>
+    <use data-icon="chunk/folder-open" x="96" y="198" width="38" height="38" fill="#1565C0"/>
+    <text x="150" y="224" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">What can it read?</text>
+    <text x="96" y="272" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">
+      <tspan x="96" dy="0">PDF, DOCX, PPTX, EPUB, HTML, LaTeX, RST, URLs, Markdown, and plain text.</tspan>
+      <tspan x="96" dy="24">The source conversion layer is intentionally broad.</tspan>
+    </text>
+  </g>
+
+  <g id="faq2" filter="url(#softShadow)">
+    <rect x="664" y="164" width="556" height="220" rx="26" fill="#FFFFFF"/>
+    <use data-icon="chunk/layers" x="700" y="198" width="38" height="38" fill="#00ACC1"/>
+    <text x="754" y="224" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">What does it export?</text>
+    <text x="700" y="272" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">
+      <tspan x="700" dy="0">A native editable `.pptx` and an `_svg.pptx` reference backup, both timestamped.</tspan>
+      <tspan x="700" dy="24">The editable deck is the primary artifact.</tspan>
+    </text>
+  </g>
+
+  <g id="faq3" filter="url(#softShadow)">
+    <rect x="60" y="414" width="556" height="220" rx="26" fill="#FFFFFF"/>
+    <use data-icon="chunk/chart-bar" x="96" y="448" width="38" height="38" fill="#7C4DFF"/>
+    <text x="150" y="474" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">Are charts editable?</text>
+    <text x="96" y="522" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">
+      <tspan x="96" dy="0">They are converted into visual native shapes, not Excel-bound chart objects.</tspan>
+      <tspan x="96" dy="24">They look polished but are not data-linked spreadsheet charts.</tspan>
+    </text>
+  </g>
+
+  <g id="faq4" filter="url(#softShadow)">
+    <rect x="664" y="414" width="556" height="220" rx="26" fill="#FFFFFF"/>
+    <use data-icon="chunk/window" x="700" y="448" width="38" height="38" fill="#2E7D32"/>
+    <text x="754" y="474" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1F2937">Which formats are supported?</text>
+    <text x="700" y="522" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6472">
+      <tspan x="700" dy="0">Standard slides plus social and marketing canvases such as RED, square post,</tspan>
+      <tspan x="700" dy="24">Story, WeChat header, and A4 print.</tspan>
+    </text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, Calibri, Microsoft YaHei, sans-serif" font-size="12" fill="#8B95A7">09</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#005587" /><text x="60" y="86" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="34" font-weight="700" fill="#2C3E50">Understand, generate, convert</text>
+  <text x="60" y="116" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" fill="#5D6D7E">The technical design doc simplifies the entire engine into three distinct phases.</text>
+
+  <line x1="160" y1="258" x2="1120" y2="258" stroke="#D6DEEA" stroke-width="4" />
+  <polygon points="470,258 454,246 454,270" fill="#C7D0DE" />
+  <polygon points="790,258 774,246 774,270" fill="#C7D0DE" />
+
+  <g id="step1" filter="url(#softShadow)">
+    <circle cx="220" cy="258" r="44" fill="#005587" />
+    <text x="220" y="250" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">01</text>
+    <text x="220" y="270" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">STAGE</text>
+    <rect x="90" y="338" width="260" height="260" rx="24" fill="#ECF0F1" />
+    <text x="120" y="380" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Content understanding</text>
+    <text x="120" y="416" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="15" fill="#5D6D7E">
+      <tspan x="120" dy="0">Source files are transformed into structured</tspan>
+      <tspan x="120" dy="22">text, then interpreted into a slide narrative.</tspan>
+      <tspan x="120" dy="30">The strategist defines the deck before</tspan>
+      <tspan x="120" dy="22">visual execution begins.</tspan>
+    </text>
+  </g>
+
+  <g id="step2" filter="url(#softShadow)">
+    <circle cx="540" cy="258" r="44" fill="#0076A8" />
+    <text x="540" y="250" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">02</text>
+    <text x="540" y="270" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">STAGE</text>
+    <rect x="410" y="338" width="260" height="260" rx="24" fill="#ECF0F1" />
+    <text x="440" y="380" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">AI visual generation</text>
+    <text x="440" y="416" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="15" fill="#5D6D7E">
+      <tspan x="440" dy="0">The executor authors each slide as SVG,</tspan>
+      <tspan x="440" dy="22">keeping the absolute-coordinate canvas mindset.</tspan>
+      <tspan x="440" dy="30">This stage creates the design draft.</tspan>
+    </text>
+  </g>
+
+  <g id="step3" filter="url(#softShadow)">
+    <circle cx="860" cy="258" r="44" fill="#F5A623" />
+    <text x="860" y="250" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">03</text>
+    <text x="860" y="270" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">STAGE</text>
+    <rect x="730" y="338" width="260" height="260" rx="24" fill="#ECF0F1" />
+    <text x="760" y="380" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Engineering conversion</text>
+    <text x="760" y="416" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="15" fill="#5D6D7E">
+      <tspan x="760" dy="0">Post-processing and export translate the</tspan>
+      <tspan x="760" dy="22">vector draft into editable DrawingML objects.</tspan>
+      <tspan x="760" dy="30">This stage creates the delivery artifact.</tspan>
+    </text>
+  </g>
+
+  <g id="stage4" filter="url(#softShadow)">
+    <rect x="1050" y="338" width="170" height="260" rx="24" fill="#ECF0F1" />
+    <text x="1080" y="382" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="20" font-weight="700" fill="#2C3E50">Output pair</text>
+    <text x="1080" y="424" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="15" fill="#5D6D7E">
+      <tspan x="1080" dy="0">Native PPTX</tspan>
+      <tspan x="1080" dy="24">SVG backup</tspan>
+      <tspan x="1080" dy="24">Speaker notes</tspan>
+    </text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="12" fill="#7F8C8D">06</text>
+</svg>

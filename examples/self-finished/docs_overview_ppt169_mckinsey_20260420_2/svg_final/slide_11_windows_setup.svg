@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#005587" /><text x="60" y="86" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="34" font-weight="700" fill="#2C3E50">The minimum Windows setup path</text>
+  <text x="60" y="116" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" fill="#5D6D7E">The installation guide is intentionally short: install Python, clone the repo, install dependencies, verify imports.</text>
+
+  <line x1="150" y1="260" x2="1130" y2="260" stroke="#D6DEEA" stroke-width="4" />
+  <polygon points="430,260 414,248 414,272" fill="#C7D0DE" />
+  <polygon points="700,260 684,248 684,272" fill="#C7D0DE" />
+  <polygon points="970,260 954,248 954,272" fill="#C7D0DE" />
+
+  <g id="step1" filter="url(#softShadow)">
+    <circle cx="190" cy="260" r="42" fill="#005587" />
+    <text x="190" y="266" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">1</text>
+    <path fill="#ECF0F1" d="M84,340 H296 A24,24 0 0 1 320,364 V580 A24,24 0 0 1 296,604 H84 A24,24 0 0 1 60,580 V364 A24,24 0 0 1 84,340 Z" />
+    <text x="90" y="382" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Install Python 3.10+</text>
+    <text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="90" y="430">The critical checkbox is adding</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="90" y="452">`python.exe` to PATH.</text></g>
+
+  <g id="step2" filter="url(#softShadow)">
+    <circle cx="460" cy="260" r="42" fill="#0076A8" />
+    <text x="460" y="266" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">2</text>
+    <path fill="#ECF0F1" d="M354,340 H566 A24,24 0 0 1 590,364 V580 A24,24 0 0 1 566,604 H354 A24,24 0 0 1 330,580 V364 A24,24 0 0 1 354,340 Z" />
+    <text x="360" y="382" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Download the project</text>
+    <text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="360" y="430">Use ZIP or `git clone`, then</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="360" y="452">open the repository in your AI IDE.</text></g>
+
+  <g id="step3" filter="url(#softShadow)">
+    <circle cx="730" cy="260" r="42" fill="#F5A623" />
+    <text x="730" y="266" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">3</text>
+    <path fill="#ECF0F1" d="M624,340 H836 A24,24 0 0 1 860,364 V580 A24,24 0 0 1 836,604 H624 A24,24 0 0 1 600,580 V364 A24,24 0 0 1 624,340 Z" />
+    <text x="630" y="382" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Install dependencies</text>
+    <path fill="#ECF0F1" d="M642,430 H818 A12,12 0 0 1 830,442 V466 A12,12 0 0 1 818,478 H642 A12,12 0 0 1 630,466 V442 A12,12 0 0 1 642,430 Z" />
+    <text x="730" y="460" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="15" fill="#2C3E50">pip install -r requirements.txt</text>
+  </g>
+
+  <g id="step4" filter="url(#softShadow)">
+    <circle cx="1000" cy="260" r="42" fill="#27AE60" />
+    <text x="1000" y="266" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">4</text>
+    <path fill="#ECF0F1" d="M894,340 H1196 A24,24 0 0 1 1220,364 V580 A24,24 0 0 1 1196,604 H894 A24,24 0 0 1 870,580 V364 A24,24 0 0 1 894,340 Z" />
+    <text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#2C3E50" font-weight="700" font-size="22" x="900" y="374">Verify and run</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#2C3E50" font-weight="700" font-size="22" x="900" y="398">a tiny deck</text><path fill="#ECF0F1" d="M912,430 H1178 A12,12 0 0 1 1190,442 V480 A12,12 0 0 1 1178,492 H912 A12,12 0 0 1 900,480 V442 A12,12 0 0 1 912,430 Z" />
+    <text x="1045" y="455" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="14" fill="#2C3E50">python -c "import pptx; import fitz;"</text>
+    <text x="900" y="530" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="15" fill="#5D6D7E">Then ask the AI for a 3-page test deck to prove the setup works end to end.</text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="12" fill="#7F8C8D">11</text>
+</svg>

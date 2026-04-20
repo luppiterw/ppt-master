@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#0D1117" />
+  <rect x="0" y="0" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><rect x="0" y="6" width="640" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="714" width="1280" height="2" fill="#00D4FF" fill-opacity="0.45" /><rect x="0" y="716" width="1280" height="4" fill="#39FF14" fill-opacity="0.65" /><text x="60" y="86" font-family="&quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace" font-size="34" font-weight="700" fill="#39FF14">Output quality depends on the model and the review loop</text>
+  <text x="60" y="116" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#8B949E">The FAQ is candid: when layout breaks, the problem is usually model capability, not the whole pipeline.</text>
+
+  <g id="leftPanel" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M66,166 H574 A6,6 0 0 1 580,172 V628 A6,6 0 0 1 574,634 H66 A6,6 0 0 1 60,628 V172 A6,6 0 0 1 66,166 Z" />
+    <text x="96" y="214" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Recommended quality stance</text>
+    <text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="96" y="266">- Claude is positioned as the strongest layout model in the project docs</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="96" y="292">- Other models can work, but with lower confidence on spacing and coordinates</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="96" y="318">- High-quality output assumes page review and selective regeneration</text><text fill="#8B949E" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" x="96" y="344">- The deck is described as a high-quality starting point, not a guaranteed final deliverable</text></g>
+
+  <g id="rightFlow" filter="url(#softShadow)">
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M626,166 H1214 A6,6 0 0 1 1220,172 V628 A6,6 0 0 1 1214,634 H626 A6,6 0 0 1 620,628 V172 A6,6 0 0 1 626,166 Z" />
+    <text x="656" y="214" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Typical review loop</text>
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M662,256 H1178 A6,6 0 0 1 1184,262 V324 A6,6 0 0 1 1178,330 H662 A6,6 0 0 1 656,324 V262 A6,6 0 0 1 662,256 Z" />
+    <text x="688" y="301" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="700" fill="#39FF14">1  Generate a first pass</text>
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M662,346 H1178 A6,6 0 0 1 1184,352 V414 A6,6 0 0 1 1178,420 H662 A6,6 0 0 1 656,414 V352 A6,6 0 0 1 662,346 Z" />
+    <text fill="#00D4FF" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-weight="700" font-size="18" x="688" y="383">2  Inspect specific overflow</text><text fill="#00D4FF" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-weight="700" font-size="18" x="688" y="403">and alignment issues</text><path fill="#161B22" stroke="#30363D" stroke-width="2" d="M662,436 H1178 A6,6 0 0 1 1184,442 V504 A6,6 0 0 1 1178,510 H662 A6,6 0 0 1 656,504 V442 A6,6 0 0 1 662,436 Z" />
+    <text x="688" y="481" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="700" fill="#FF2E97">3  Regenerate or manually fix the affected page</text>
+    <path fill="#161B22" stroke="#30363D" stroke-width="2" d="M662,526 H1178 A6,6 0 0 1 1184,532 V594 A6,6 0 0 1 1178,600 H662 A6,6 0 0 1 656,594 V532 A6,6 0 0 1 662,526 Z" />
+    <text x="688" y="571" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="700" fill="#39FF14">4  Finish the final mile inside PowerPoint when needed</text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="&quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#8B949E">10</text>
+</svg>

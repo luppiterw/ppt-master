@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#005587" /><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#2C3E50" font-weight="700" font-size="34" x="60" y="86">Most setup failures are environment issues,</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#2C3E50" font-weight="700" font-size="34" x="60" y="122">not product logic issues</text><text x="60" y="116" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" fill="#5D6D7E">The troubleshooting section is mostly about PATH, pip targeting, missing modules, and script permissions.</text>
+
+  <g id="chevrons" filter="url(#softShadow)">
+    <polygon points="60,222 254,222 288,266 254,310 60,310" fill="#005587" />
+    <text x="164" y="261" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Check PATH</text>
+    <text x="164" y="283" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="11" fill="#FFFFFF">where python</text>
+
+    <polygon points="300,222 494,222 528,266 494,310 300,310 334,266" fill="#0076A8" />
+    <text x="414" y="261" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Match pip to Python</text>
+    <text x="414" y="283" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="11" fill="#FFFFFF">python -m pip</text>
+
+    <polygon points="540,222 734,222 768,266 734,310 540,310 574,266" fill="#F5A623" />
+    <text x="654" y="261" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Test imports</text>
+    <text x="654" y="283" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="11" fill="#FFFFFF">pptx + fitz</text>
+
+    <polygon points="780,222 974,222 1008,266 974,310 780,310 814,266" fill="#27AE60" />
+    <text x="894" y="261" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Run small sample</text>
+    <text x="894" y="283" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="11" fill="#FFFFFF">prove the chain</text>
+
+    <polygon points="1020,222 1180,222 1214,266 1180,310 1020,310 1054,266" fill="#E74C3C" />
+    <text x="1118" y="261" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Escalate edge cases</text>
+    <text x="1118" y="283" text-anchor="middle" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="11" fill="#FFFFFF">CairoSVG / Node / Pandoc</text>
+  </g>
+
+  <g id="bottomCards">
+    <g id="card1" filter="url(#softShadow)">
+      <path fill="#ECF0F1" d="M84,378 H410 A24,24 0 0 1 434,402 V578 A24,24 0 0 1 410,602 H84 A24,24 0 0 1 60,578 V402 A24,24 0 0 1 84,378 Z" />
+      <text x="92" y="420" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Common failure modes</text>
+      <text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="92" y="466">- `python` opens the Microsoft Store</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="92" y="490">- `pip` installs to the wrong interpreter</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="92" y="514">- PowerShell blocks script execution</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="92" y="538">- PyMuPDF import is missing or broken</text></g>
+
+    <g id="card2" filter="url(#softShadow)">
+      <path fill="#ECF0F1" d="M478,378 H804 A24,24 0 0 1 828,402 V578 A24,24 0 0 1 804,602 H478 A24,24 0 0 1 454,578 V402 A24,24 0 0 1 478,378 Z" />
+      <text x="486" y="420" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">What to try first</text>
+      <text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="486" y="466">1  Re-check PATH</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="486" y="490">2  Use `python -m pip`</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="486" y="514">3  Re-run the core import test</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="486" y="538">4  Restart the terminal before retrying</text></g>
+
+    <g id="card3" filter="url(#softShadow)">
+      <path fill="#ECF0F1" d="M872,378 H1196 A24,24 0 0 1 1220,402 V578 A24,24 0 0 1 1196,602 H872 A24,24 0 0 1 848,578 V402 A24,24 0 0 1 872,378 Z" />
+      <text x="880" y="420" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Mindset</text>
+      <text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="880" y="466">Do not start debugging slide design until the</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="880" y="490">runtime, imports, and minimal sample path all</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="15" x="880" y="514">work cleanly on the machine.</text></g>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="12" fill="#7F8C8D">12</text>
+</svg>

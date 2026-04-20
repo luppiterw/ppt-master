@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.10" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#005587" /><text x="60" y="86" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="34" font-weight="700" fill="#2C3E50">Output quality depends on the model and the review loop</text>
+  <text x="60" y="116" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="16" fill="#5D6D7E">The FAQ is candid: when layout breaks, the problem is usually model capability, not the whole pipeline.</text>
+
+  <g id="leftPanel" filter="url(#softShadow)">
+    <path fill="#ECF0F1" d="M86,166 H554 A26,26 0 0 1 580,192 V608 A26,26 0 0 1 554,634 H86 A26,26 0 0 1 60,608 V192 A26,26 0 0 1 86,166 Z" />
+    <text x="96" y="214" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Recommended quality stance</text>
+    <text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="16" x="96" y="266">- Claude is positioned as the strongest layout model in the project docs</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="16" x="96" y="292">- Other models can work, but with lower confidence on spacing and coordinates</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="16" x="96" y="318">- High-quality output assumes page review and selective regeneration</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#5D6D7E" font-size="16" x="96" y="344">- The deck is described as a high-quality starting point, not a guaranteed final deliverable</text></g>
+
+  <g id="rightFlow" filter="url(#softShadow)">
+    <path fill="#ECF0F1" d="M646,166 H1194 A26,26 0 0 1 1220,192 V608 A26,26 0 0 1 1194,634 H646 A26,26 0 0 1 620,608 V192 A26,26 0 0 1 646,166 Z" />
+    <text x="656" y="214" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="700" fill="#2C3E50">Typical review loop</text>
+    <path fill="#ECF0F1" d="M674,256 H1166 A18,18 0 0 1 1184,274 V312 A18,18 0 0 1 1166,330 H674 A18,18 0 0 1 656,312 V274 A18,18 0 0 1 674,256 Z" />
+    <text x="688" y="301" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="18" font-weight="700" fill="#005587">1  Generate a first pass</text>
+    <path fill="#ECF0F1" d="M674,346 H1166 A18,18 0 0 1 1184,364 V402 A18,18 0 0 1 1166,420 H674 A18,18 0 0 1 656,402 V364 A18,18 0 0 1 674,346 Z" />
+    <text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#0076A8" font-weight="700" font-size="18" x="688" y="383">2  Inspect specific overflow</text><text font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#0076A8" font-weight="700" font-size="18" x="688" y="403">and alignment issues</text><path fill="#ECF0F1" d="M674,436 H1166 A18,18 0 0 1 1184,454 V492 A18,18 0 0 1 1166,510 H674 A18,18 0 0 1 656,492 V454 A18,18 0 0 1 674,436 Z" />
+    <text x="688" y="481" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="18" font-weight="700" fill="#F5A623">3  Regenerate or manually fix the affected page</text>
+    <path fill="#ECF0F1" d="M674,526 H1166 A18,18 0 0 1 1184,544 V582 A18,18 0 0 1 1166,600 H674 A18,18 0 0 1 656,582 V544 A18,18 0 0 1 674,526 Z" />
+    <text x="688" y="571" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="18" font-weight="700" fill="#27AE60">4  Finish the final mile inside PowerPoint when needed</text>
+  </g>
+
+  <text x="1208" y="684" text-anchor="end" font-family="Arial, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="12" fill="#7F8C8D">10</text>
+</svg>
