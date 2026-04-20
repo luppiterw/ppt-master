@@ -4,6 +4,7 @@ This directory stores finished presentation projects generated locally and promo
 
 For future AI sessions without prior chat context, read these first:
 
+- [../../USER_WORKFLOW.md](../../USER_WORKFLOW.md)
 - [AGENTS.md](./AGENTS.md)
 - [WORKFLOW.md](./WORKFLOW.md)
 - [PROJECT_INDEX.md](./PROJECT_INDEX.md)

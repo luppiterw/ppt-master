@@ -2,6 +2,8 @@
 
 This document explains how to continue the user's personal PPT production workflow when there is no prior chat context.
 
+For the repository-level summary of this personal workflow, also read [`USER_WORKFLOW.md`](../../USER_WORKFLOW.md).
+
 ## Goal
 
 Keep finished, shareable PPT Master outputs in a versioned area that is safe to commit and push to the user's fork.

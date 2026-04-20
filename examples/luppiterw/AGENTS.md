@@ -6,8 +6,9 @@ Before making changes under `examples/luppiterw/`, the agent must:
 
 1. Read the repository root `AGENTS.md`
 2. Read `skills/ppt-master/SKILL.md`
-3. Read [WORKFLOW.md](./WORKFLOW.md)
-4. Read [PROJECT_INDEX.md](./PROJECT_INDEX.md)
+3. Read [`USER_WORKFLOW.md`](../../USER_WORKFLOW.md)
+4. Read [WORKFLOW.md](./WORKFLOW.md)
+5. Read [PROJECT_INDEX.md](./PROJECT_INDEX.md)
 
 ## User-Specific Rules
 
@@ -49,8 +50,9 @@ Before making changes under `examples/luppiterw/`, the agent must:
 
 If the user asks for "continue my luppiterw workflow" or similar, start from this sequence:
 
-1. Inspect `examples/luppiterw/PROJECT_INDEX.md`
-2. Inspect `git branch --show-current` and `git remote -v`
-3. If generating a new deck, work in `projects/` first
-4. After export is complete, move the finished project into `examples/luppiterw/`
-5. Update the index and commit/push to `luppiterw`
+1. Inspect `USER_WORKFLOW.md`
+2. Inspect `examples/luppiterw/PROJECT_INDEX.md`
+3. Inspect `git branch --show-current` and `git remote -v`
+4. If generating a new deck, work in `projects/` first
+5. After export is complete, move the finished project into `examples/luppiterw/`
+6. Update the index and commit/push to `luppiterw`

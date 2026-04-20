@@ -2,6 +2,8 @@
 
 This file serves as the project entry point for general AI agents. Before executing PPT generation tasks, **you MUST first read `skills/ppt-master/SKILL.md`** for the complete workflow and rules.
 
+If the task is specifically about the repository owner's personal archival workflow, branch conventions, or finished-example management, also read `USER_WORKFLOW.md` and `examples/luppiterw/AGENTS.md`.
+
 ## Project Overview
 
 PPT Master is an AI-driven presentation generation system. Through multi-role collaboration (Strategist → Image_Generator → Executor), it converts source documents (PDF/DOCX/URL/Markdown) into natively editable PPTX with real PowerPoint shapes (DrawingML).
@@ -22,6 +24,7 @@ PPT Master is an AI-driven presentation generation system. Through multi-role co
 - This repository is a workflow/skill package, not a conventional app or service scaffold
 - Do NOT assume repository-local conventions such as `.worktrees/`, `tests/`, or mandatory branch setup unless the user explicitly requests them
 - If a generic coding skill conflicts with this repository's instructions, prioritize `skills/ppt-master/SKILL.md` and this file for work inside this repository
+- Keep user-specific archival conventions isolated in additive docs where possible, so future upstream merges stay straightforward
 
 ## Common Commands
 
